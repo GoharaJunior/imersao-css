@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  background-image: url(/img/background-01.png);
+  background-size: cover;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  margin: 30px;
+}
+
+.menu {
+  background: #EDF1FD;
+  padding: 10px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+  font-weight: bold;
+  transition: 150ms ease;
+}
+
+a:hover {
+  color: #69c5a1;
+}
+
+.site-title {
+  font-size: 55px;
+  text-align: center;
+  color: #69c5a1;
+}
+
+.site-subtitle {
+  text-align: center;
+  color: #69c5a1;
+  font-style:italic;
+  font-size: 20px;
+}
+
