@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   background-image: url(/img/background-01.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .logo {
