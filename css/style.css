@@ -1,55 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  background-image: url('https://user-images.githubusercontent.com/57417305/81610094-500fe400-93af-11ea-9bca-513384a67383.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 100vh;
+  height: 100vh;
 }
 
-.logo {
-  text-align: center;
+@media (min-width: 400px) {
+  body {
+    font-size: 18px;
+  }
 }
 
-.logo img {
-  margin: 30px;
+@media (min-width: 600px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu {
-  background: #EDF1FD;
-  padding: 10px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .menu li {
   list-style: none;
 }
 
-a {
+.menu a {
+  color: teal;
+  display: block;
+  padding: 10px;
   text-decoration: none;
-  color: #404040;
-  font-weight: bold;
-  transition: 150ms ease;
-}
-
-a:hover {
-  color: #69c5a1;
 }
 
 .site-title {
-  font-size: 55px;
+  color: whitesmoke;
   text-align: center;
-  color: #69c5a1;
 }
 
 .site-subtitle {
+  color: silver;
+  font-style: italic;
+  font-weight: lighter;
   text-align: center;
-  color: #69c5a1;
-  font-style:italic;
-  font-size: 20px;
+  font-size: 2em;
 }
 
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
