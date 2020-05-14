@@ -104,7 +104,7 @@ img {
   max-width: 960px;
   margin: 0 auto;
   padding: 15px 0px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .intro-info {
@@ -118,92 +118,33 @@ img {
 
 .intro-info  h1{
   color: whitesmoke;
-  font-size: 55px;
+  font-size: 72px;
 }
 
 .intro-info h2 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 .intro-img {
-  width: 500px;
+  width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.titulo {
-  transform: scale(0.2) translateY(50vh);
-  opacity: 0;
-  
-  animation: linear 2s animacaoTitulo forwards;
-}
-
-@keyframes animacaoTitulo {
-  0% {
-    transform: scale(0.2) translateY(50vh);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-  }
-  
-}
-
-.site-title {
-  color: whitesmoke;
-  text-align: center;
-  font-family: 'Rubik', sans-serif;
-  font-size: 60px;
-}
-
-.site-subtitle {
-  color: silver;
-  font-style: italic;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 2em;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 20px;
+/*===PORTFOLIO===*/
+.portfolio-bg {
+  background-color: #FFF5E8;
 }
 
 .contato,
 .portfolio {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 2em;
-  min-height: 100vh;
 }
 
-.contato,
 .portfolio h2 {
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FF564F;
 }
 
 .portfolio .grid {
@@ -223,12 +164,19 @@ img {
     grid-template-columns: repeat(3, 260px);
     align-content: center;
     justify-content: center;
-    height: calc(100vh - 8em - 48px);
+
   }
 }
 
 .portfolio figure {
   text-align: center;
+}
+
+.grid figcaption {
+  color: #324A58;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .img-portfolio {
@@ -237,11 +185,23 @@ img {
   object-fit: cover;
   object-position: left bottom;
   border-radius: 5px;
+  box-shadow: 0px 30px 80px rgba(6, 12, 58, 0.4);
   transition: transform 250ms;
 }
 
 .img-portfolio:hover {
   transform: scale(1.050);
+}
+
+/*===FOOTER===*/
+.footer-bg {
+  background-color: #324A58;
+}
+
+.contato h2 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
 }
 
 .contato .icons {
@@ -250,10 +210,9 @@ img {
 
 .contato a {
   color: white;
-  font-size: 1.5em;
+  font-size: 20px;
 }
 
 .contato a {
   text-decoration: none;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
-} */
+} 
