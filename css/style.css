@@ -223,16 +223,16 @@ img {
 /*===STAR WARS ANIMAÇÃO===*/
 /* Propriedades de animação */
 .star {
-  animation: star 10s ease-out forwards;
+  animation: star 3s ease-out forwards;
 }
 .wars {
-  animation: wars 10s ease-out forwards;
+  animation: wars 3s ease-out forwards;
 }
 .byline span {
-  animation: spin-letters 10s linear forwards;
+  animation: spin-letters 3s linear forwards;
 }
 .byline {
-  animation: move-byline 10s linear infinite;
+  animation: move-byline 3s linear infinite;
 }
 
 /* Keyframes */
@@ -240,9 +240,6 @@ img {
   0% {
     opacity: 0;
     transform: scale(1.5) translateY(-0.75em);
-  }
-  20% {
-    opacity: 1;
   }
   89% {
     opacity: 1;
@@ -258,9 +255,6 @@ img {
   0% {
     opacity: 0;
     transform: scale(1.5) translateY(0.5em);
-  }
-  20% {
-    opacity: 1;
   }
   90% {
     opacity: 1;
@@ -369,21 +363,60 @@ img {
   color: #feda4a;
   font-size: 250%;
   text-align: center;
+  position: relative;
+  top: 200px;
 }
 
 .titulo-01 {
+  
   transform: scale(0.2) translateY(50vh);
   opacity: 0;
   animation: 10s ease 2s animacaoTitulo forwards;
 }
 
 @keyframes animacaoTitulo {
-  from {
+  0% {
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
   }
-  to {
+  50% {
     transform: scale(1) translateY(0);
     opacity: 1;
   }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 0;
+  }
 }
+
+/*  Titulo-02 */
+.titulo-02 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #feda4a;
+  font-size: 250%;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.titulo-02 {
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: 10s ease 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  0% {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 0;
+  }
+}
+
